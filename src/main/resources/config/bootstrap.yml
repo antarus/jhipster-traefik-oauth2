@@ -24,5 +24,10 @@ spring:
           - git-version=${git.commit.id.describe:}
           - git-commit=${git.commit.id.abbrev:}
           - git-branch=${git.branch:}
+          - traefik.enable=true
+          - traefik.frontend.login.rule=PathPrefix:/login
+          - traefik.frontend.login.priority=1001
+          - traefik.frontend.oauth.rule=PathPrefix:/oauth2
+          - traefik.frontend.oauth.priority=1001
       host: localhost
       port: 8500

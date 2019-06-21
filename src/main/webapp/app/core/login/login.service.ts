@@ -18,7 +18,7 @@ export class LoginService {
       const data = response.body;
       let logoutUrl = data.logoutUrl;
       // Add here, the custom path if traefik is used
-      const redirectUri = window.location.origin;
+      const redirectUri = window.location.origin + '/services/jhipster/';
 
       // if Keycloak, uri has protocol/openid-connect/token
       if (logoutUrl.indexOf('/protocol') > -1) {

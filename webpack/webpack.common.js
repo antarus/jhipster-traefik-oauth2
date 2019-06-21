@@ -93,6 +93,8 @@ module.exports = (options) => ({
             chunksSortMode: 'manual',
             inject: 'body'
         }),
-        new BaseHrefWebpackPlugin({ baseHref: '/' })
+        new BaseHrefWebpackPlugin({
+          baseHref: '/services/jhipster/'
+        })
     ]
 });

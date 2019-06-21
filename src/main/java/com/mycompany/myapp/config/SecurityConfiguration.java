@@ -89,6 +89,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .antMatchers("/management/**").hasAuthority(AuthoritiesConstants.ADMIN)
         .and()
             .oauth2Login()
+                .defaultSuccessUrl("/services/jhipster/")
         .and()
             .oauth2ResourceServer()
                 .jwt()
