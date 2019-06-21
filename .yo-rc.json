@@ -34,6 +34,11 @@
     "otherModules": [],
     "enableTranslation": true,
     "nativeLanguage": "en",
-    "languages": ["en", "fr"]
+    "languages": ["en", "fr"],
+    "appsFolders": ["test-oidc"],
+    "directoryPath": "../",
+    "gatewayType": "traefik",
+    "monitoring": "no",
+    "jwtSecretKey": "NWUyYjQ0MWI5OGNkM2RlN2I2MjMxZmJkMzdlYzU4YjBiYWIwZGVmN2E1ZWRlOTVmZTI1MGQ2MjQyZjQzNGQ0NDdhM2ZjZmZkMTdkMjAwNmRjMjJlYzczMTRiMmJjZDA0YjI3MA=="
   }
 }
